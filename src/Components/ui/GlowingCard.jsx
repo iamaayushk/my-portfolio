@@ -4,7 +4,7 @@ import { GlowingEffect } from "../ui/Glowing-effect";
 
 function GlowingEffectDemoSecond() {
   return (
-    <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
+    <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
 
 <GridItem
   area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
@@ -48,7 +48,7 @@ function GlowingEffectDemoSecond() {
 
 const GridItem = ({ area, icon, title, description }) => {
   return (
-    <li id="skills" className={`min-h-[10rem] sm:min-h-[14rem] list-none ${area}`}>
+    <li id="skills" className={`min-h-[14rem] list-none ${area}`}>
       <div className="relative h-full rounded-2.5xl border p-2 md:rounded-3xl md:p-3">
         <GlowingEffect
           blur={0}

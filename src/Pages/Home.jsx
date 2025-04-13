@@ -4,6 +4,7 @@ import Navbar from '../Components/ui/Navbar';
 import { GridBackgroundDemo } from '../Components/ui/GridBackgroundDemo';
 import Contact from '../Components/ui/Contact';
 import { FloatingDock } from '../Components/ui/Floating-dock';
+import Footer from '../Components/ui/Footer';
 import { IconHome, IconMessage, IconUser, IconBriefcase } from "@tabler/icons-react";
 
 // ✅ Lazy imports
@@ -64,8 +65,9 @@ function Home() {
       </div>
 
       <div className="rounded-md flex">
-        {/* <FloatingDock items={dockItems} /> */}
+       
       </div>
+      <Footer />
     </>
   );
 }

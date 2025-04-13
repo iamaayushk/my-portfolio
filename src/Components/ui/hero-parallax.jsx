@@ -1,9 +1,8 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { Link } from "react-router-dom"; // use only if using React Router
+import { Link } from "react-router-dom";
 
 export const HeroParallax = ({ products }) => {
-  // Safe slicing that prevents undefined values
   const chunkSize = 5;
   const firstRow = products.slice(0, chunkSize);
   const secondRow = products.slice(chunkSize, chunkSize * 2);
@@ -27,7 +26,7 @@ export const HeroParallax = ({ products }) => {
   return (
     <div
       ref={ref}
-      className="h-[300vh] sm:h-[250vh] py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[250vh] py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -63,16 +62,14 @@ export const Header = () => {
         My Web <br /> Project Showcase
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      Welcome to a curated collection of my web development projects. Each one
-        reflects my passion for design, development, and user experience. Scroll
-        down to explore them all!
+        Welcome to a curated collection of my web development projects.
       </p>
     </div>
   );
 };
 
 export const ProductCard = ({ product, translate }) => {
-  if (!product) return null; // ✅ Defensive check
+  if (!product) return null;
 
   return (
     <motion.div

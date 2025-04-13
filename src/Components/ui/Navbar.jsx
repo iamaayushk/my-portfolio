@@ -60,12 +60,12 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 pt-2 bg-white dark:bg-[#040508] transition-all duration-300 space-y-2 w-full">
-          <a href="#home" onClick={toggleMenu} className={navLinkClasses}>Home</a>
-          <a href="#about" onClick={toggleMenu} className={navLinkClasses}>About</a>
-          <a href="#skills" onClick={toggleMenu} className={navLinkClasses}>Skills</a>
-          <a href="#projects" onClick={toggleMenu} className={navLinkClasses}>Projects</a>
-          <Link to="/contact" onClick={toggleMenu} className={navLinkClasses}>Contact</Link>
+        <div className="md:hidden px-4 pb-4 pt-2 bg-gray-800 dark:bg-[#040508] transition-all duration-300 space-y-2 w-full rounded-lg shadow-lg">
+          <a href="#home" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Home</a>
+          <a href="#about" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>About</a>
+          <a href="#skills" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Skills</a>
+          <a href="#projects" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Projects</a>
+          <Link to="/contact" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Contact</Link>
         </div>
       )}
     </nav>
