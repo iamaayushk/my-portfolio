@@ -17,7 +17,7 @@ export const products = [
       thumbnail: "/DesignStoreDash.webp",
     },
     {
-      title: "ShapeXplore",
+      title: "Shapexplore",
       link: "https://iamaayushk.github.io/ShapeXplore-/",
       thumbnail: "/shapexploreContact.webp",
     },
@@ -27,7 +27,7 @@ export const products = [
       thumbnail: "/Moviemania.webp",
     },
     {
-      title: "Design Store",
+      title: "Design store",
       link: "https://editrix.ai",
       thumbnail: "/editrix.webp",
     },
@@ -42,12 +42,12 @@ export const products = [
       thumbnail: "/constella.webp",
     },
     {
-      title: "MovieMania",
+      title: "Movie Mania",
       link: "https://ui.aceternity.com",
       thumbnail: "/moviemania2.webp",
     },
     {
-      title: "Portfolio",
+      title: "My Portfolio",
       link: "https://aayushkumar.me/",
       thumbnail: "/Portfolio.webp",
     },

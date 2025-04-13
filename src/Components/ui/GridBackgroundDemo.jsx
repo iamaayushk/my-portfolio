@@ -5,13 +5,13 @@ export function GridBackgroundDemo() {
   return (
     <section
       id="about"
-      className="relative flex min-h-screen w-full flex-col items-center scroll-smooth justify-start bg-white dark:bg-black scroll-mt-20 overflow-y-auto py-10"
+      className="relative flex min-h-screen w-full flex-col items-center scroll-smooth justify-start bg-white dark:bg-black scroll-mt-20 overflow-y-auto py-10 sm:py-20"
     >
       {/* Grid Background */}
       <div
         className={cn(
           "absolute inset-0",
-          "[background-size:40px_40px]",
+          "[background-size:20px_20px] sm:[background-size:40px_40px]",
           "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
           "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
