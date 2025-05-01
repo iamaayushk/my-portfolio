@@ -2,7 +2,7 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export const HeroParallax = ({ products }) => {
+const HeroParallax = ({ products }) => {
   const chunkSize = 5;
   const firstRow = products.slice(0, chunkSize);
   const secondRow = products.slice(chunkSize, chunkSize * 2);
@@ -91,3 +91,4 @@ export const ProductCard = ({ product, translate }) => {
     </motion.div>
   );
 };
+export default HeroParallax;

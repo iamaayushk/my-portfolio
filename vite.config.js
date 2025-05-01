@@ -4,9 +4,13 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/my-portfolio/',
   plugins: [
     react(),
     tailwindcss(),
   ],
+  build: {
+    outDir: 'dist',
+  },
+  // This part is important for SPA routing on Netlify
+  base: '/',
 })

@@ -40,7 +40,7 @@ function Navbar() {
             <a href="#home" className={navLinkClasses}>Home</a>
             <a href="#about" className={navLinkClasses}>About</a>
             <Link to="/skills" className={navLinkClasses}>Skills</Link>
-            <Link to="/projects" className={navLinkClasses}>Projects</Link>
+            {/* <Link to="/projects" className={navLinkClasses}>Projects</Link> */}
             <a href="#contact" className={navLinkClasses}>Contact</a>
           </div>
 
@@ -64,7 +64,7 @@ function Navbar() {
           <a href="#home" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Home</a>
           <a href="#about" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>About</a>
           <Link to="/skills" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Skills</Link>
-          <Link to="/projects" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Projects</Link>
+          {/* <Link to="/projects" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Projects</Link> */}
           <a href="#contact" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Contact</a>
         </div>
       )}
