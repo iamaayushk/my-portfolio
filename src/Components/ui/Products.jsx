@@ -7,9 +7,9 @@ function HeroParallaxDemo() {
 export default HeroParallaxDemo;
 export const products = [
     {
-      title: "ShapeXplore",
-      link: "https://iamaayushk.github.io/ShapeXplore-/",
-      thumbnail: "/shapexploreDash.webp",
+      title: "Fintrix",
+      link: "https://github.com/iamaayushk/Fintrix",
+      thumbnail: "/fintrix.webp",
     },
     {
       title: "Design Store",
@@ -19,7 +19,7 @@ export const products = [
     {
       title: "Shapexplore",
       link: "https://iamaayushk.github.io/ShapeXplore-/",
-      thumbnail: "/shapexploreContact.webp",
+      thumbnail: "/shapexploreDash.webp",
     },
     {
       title: "MovieMania",

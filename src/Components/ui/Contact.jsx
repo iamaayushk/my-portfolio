@@ -4,6 +4,7 @@ import { Input } from "./Input";
 import { Textarea } from "./Textarea";
 import { Label } from "./Label";
 import { toast } from "react-toastify";
+import Footer from "./Footer";
 
 const ContactForm = () => {
   const form = useRef();
@@ -26,10 +27,13 @@ const ContactForm = () => {
   };
 
   return (
+    <>
+    
     <form
       ref={form}
       onSubmit={handleSubmit}
       className="max-w-xl mx-auto p-6 space-y-6 bg-white dark:bg-zinc-900 rounded-lg shadow-md"
+      id="contact"
     >
       <div className="grid w-full items-center gap-1.5">
         <Label htmlFor="name">Name</Label>
@@ -66,11 +70,14 @@ const ContactForm = () => {
 
       <button
         type="submit"
-        className="mt-4 w-full bg-blue-600 text-white py-2 px-4 cursor-pointer rounded-md hover:bg-blue-700 transition duration-300"
+        className="mt-4 w-full bg-blue-700 text-white py-2 px-4 cursor-pointer rounded-md hover:bg-sky-700 transition duration-300"
+       
       >
         Send Message
       </button>
     </form>
+    
+    </>
   );
 };
 

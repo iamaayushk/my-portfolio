@@ -1,15 +1,15 @@
 import React, { Suspense } from 'react';
 import { Spotlight } from '../Components/ui/spotlight-new';
 import Navbar from '../Components/ui/Navbar';
-import { GridBackgroundDemo } from '../Components/ui/GridBackgroundDemo';
+import  GridBackgroundDemo  from '../Components/ui/GridBackgroundDemo';
 import Contact from '../Components/ui/Contact';
 import { FloatingDock } from '../Components/ui/Floating-dock';
 import Footer from '../Components/ui/Footer';
 import { IconHome, IconMessage, IconUser, IconBriefcase } from "@tabler/icons-react";
 
-// ✅ Lazy imports
-const HeroParallaxDemo = React.lazy(() => import('../Components/ui/Products'));
-const GlowingCard = React.lazy(() => import('../Components/ui/GlowingCard'));
+// const HeroParallaxDemo = React.lazy(() => import('../Components/ui/Products'));
+// const GlowingCard = React.lazy(() => import('../Components/ui/GlowingCard'));
+// const GridBackgroundDemo = React.lazy(() => import('../Components/ui/GridBackgroundDemo'));
 
 function Home() {
   const dockItems = [
@@ -39,32 +39,41 @@ function Home() {
     <>
       <div className="relative w-full h-screen bg-black border-b-2 border-dotted border-zinc-800">
       <Spotlight />
-      <Suspense fallback={<div className="text-black text-center">Loading Projects...</div>}>
+      {/* <Suspense fallback={<div className="text-black text-center">Loading...</div>}> */}
       <Navbar />
-        </Suspense>
+        {/* </Suspense> */}
         
       </div>
 
       <div className='relative w-full min-h-screen'>
-        <GridBackgroundDemo />
+      {/* <Suspense fallback={<div className="text-white text-center">Loading ...</div>}> */}
+          <GridBackgroundDemo />
+        {/* </Suspense> */}
       </div>
 
-      <div className="w-full min-h-screen bg-black px-10 py-10">
+      {/* <div className="w-full min-h-screen bg-black px-10 py-10">
         <div className="relative z-20 bg-gradient-to-b text-center from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
           Skills
         </div>
         <Suspense fallback={<div className="text-white text-center">Loading Skills...</div>}>
           <GlowingCard />
         </Suspense>
-      </div>
+      </div> */}
 
-      <div className="w-full min-h-screen bg-black px-10 py-10">
+      {/* <div className="w-full min-h-screen bg-black px-10 py-10">
         <Suspense fallback={<div className="text-white text-center">Loading Projects...</div>}>
           <HeroParallaxDemo />
         </Suspense>
+      </div> */}
+      <div className="w-full min-h-screen bg-black px-10 py-10 border-t border-neutral-800">
+        <div className="mb-10 relative z-20 bg-gradient-to-b text-center from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
+          Connect with me
+        </div>
+        <Contact/>
       </div>
 
-      <div className="rounded-md flex">
+
+      <div className="rounded-md flex mt-10">
        
       </div>
       <Footer />

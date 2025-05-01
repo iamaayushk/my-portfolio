@@ -20,7 +20,11 @@ export default function Footer() {
             <a href="https://x.com/aayushkr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
               Twitter
             </a>
-          </div>
+            <a href="https://leetcode.com/u/imaayush_k/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+            Leetcode
+            </a>
+
+          </div>  
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">

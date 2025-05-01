@@ -1,24 +1,13 @@
 import React from "react";
-import { cn } from "../../lib/utils";
 
-export function GridBackgroundDemo() {
+function GridBackgroundDemo() {
   return (
     <section
       id="about"
-      className="relative flex min-h-screen w-full flex-col items-center scroll-smooth justify-start bg-white dark:bg-black scroll-mt-20 overflow-y-auto py-10 sm:py-20"
+      className="relative flex min-h-screen w-full flex-col items-center justify-start bg-white dark:bg-black scroll-mt-20 py-10 sm:py-20 overflow-hidden"
     >
       {/* Grid Background */}
-      <div
-        className={cn(
-          "absolute inset-0",
-          "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
-        )}
-      />
-
-      {/* Radial Mask */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle,rgba(0,0,0,0.05)_1px,transparent_1px)] [background-size:20px_20px] dark:bg-[radial-gradient(circle,rgba(255,255,255,0.1)_1px,transparent_1px)]" />
 
       {/* Sticky Title */}
       <h2 className="sticky top-0 z-30 mt-0 bg-white dark:bg-black bg-opacity-80 px-4 py-4 backdrop-blur-sm bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl text-center">
@@ -30,16 +19,16 @@ export function GridBackgroundDemo() {
         {/* Image on the left */}
         <div className="w-full md:w-1/3 flex justify-center">
           <img
-            src="/linkedinprofile.jpeg"
+            src="/aboutpic.jpg"
             alt="Profile"
             className="w-48 h-48 md:w-64 md:h-64 rounded-2xl shadow-lg object-cover"
           />
         </div>
 
         {/* Text on the right */}
-        <div className="w-full md:w-2/3 text-white text-base sm:text-lg max-w-2xl">
+        <div className="w-full md:w-2/3 text-black dark:text-white text-base sm:text-lg max-w-2xl">
           <p className="mb-4">
-            Hello! I'm <strong>Aayush Kumar Singh</strong>, a full-stack developer with a strong passion for building innovative digital experiences. I love solving real-world problems through code, optimizing performance, and delivering intuitive UIs.
+            Hello! I'm <strong>Aayush Kumar Singh</strong>, a full-stack developer with a strong passion for building innovative digital experiences.
           </p>
           <p className="mb-4">
             I'm skilled in <strong>React.js, Node.js, Express.js, MongoDB (MERN stack)</strong>, as well as <strong>Java, Python, MySQL</strong>, and <strong>data structures & algorithms</strong>. I also design engaging UIs using <strong>HTML, CSS, Tailwind, and JavaScript</strong>.
@@ -62,3 +51,4 @@ export function GridBackgroundDemo() {
     </section>
   );
 }
+export default GridBackgroundDemo;

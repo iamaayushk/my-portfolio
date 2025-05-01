@@ -39,9 +39,9 @@ function Navbar() {
           <div className="hidden md:flex space-x-8">
             <a href="#home" className={navLinkClasses}>Home</a>
             <a href="#about" className={navLinkClasses}>About</a>
-            <a href="#skills" className={navLinkClasses}>Skills</a>
-            <a href="#projects" className={navLinkClasses}>Projects</a>
-            <Link to="/contact" className={navLinkClasses}>Contact</Link>
+            <Link to="/skills" className={navLinkClasses}>Skills</Link>
+            <Link to="/projects" className={navLinkClasses}>Projects</Link>
+            <a href="#contact" className={navLinkClasses}>Contact</a>
           </div>
 
           {/* Hamburger Button (Mobile) */}
@@ -63,9 +63,9 @@ function Navbar() {
         <div className="md:hidden px-4 pb-4 pt-2 bg-gray-800 dark:bg-[#040508] transition-all duration-300 space-y-2 w-full rounded-lg shadow-lg">
           <a href="#home" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Home</a>
           <a href="#about" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>About</a>
-          <a href="#skills" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Skills</a>
-          <a href="#projects" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Projects</a>
-          <Link to="/contact" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Contact</Link>
+          <Link to="/skills" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Skills</Link>
+          <Link to="/projects" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Projects</Link>
+          <a href="#contact" onClick={toggleMenu} className={`${navLinkClasses} block text-center`}>Contact</a>
         </div>
       )}
     </nav>
